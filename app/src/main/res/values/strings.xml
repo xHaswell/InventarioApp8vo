@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InventarioApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="item_product_count">Nombre:\nCantidad:</string>
+    <string name="item_product_data">%s \n(x%s)</string>
+    <string name="main_error_permission_denied">No tienes permiso para acceder al inventario.</string>
+    <string name="main_error_server">Error en el servidor.</string>
+    <string name="main_error_remove">No tienes permisos para eliminar.</string>
+</resources>
