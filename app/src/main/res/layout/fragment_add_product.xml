@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentMain"
+    android:padding="@dimen/add.padding.main"
+    tools:context=".addModule.view.AddProductFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlFotoUrl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="@dimen/add.photo.size.width"
+            android:layout_height="wrap_content"
+            android:hint="@string/addProduct.hint.photoUrl"
+            android:maxLines="@integer/addProduct.max.lines"
+            android:inputType="textUri"
+            android:imeOptions="actionNext"
+            android:id="@+id/txtFotoUrl"
+            android:nextFocusForward="@id/txtCantidad"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="@dimen/add.photo.size.width"
+        android:layout_height="@dimen/add.photo.size.height"
+        android:id="@+id/imgFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtlFotoUrl"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlNombre"
+        app:counterMaxLength="@integer/addProduct.max.name"
+        app:counterEnabled="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txtlFotoUrl">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNombre"
+            android:maxLength="@integer/addProduct.max.name"
+            android:hint="@string/addProduct.hint.name"
+            android:inputType="textPersonName|textCapSentences"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@id/txtFotoUrl"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txtlFotoUrl"
+        app:layout_constraintTop_toBottomOf="@id/txtlNombre">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCantidad"
+            android:hint="@string/addProduct.hint.cantidad"
+            android:inputType="number"
+            android:imeOptions="actionDone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
+
+

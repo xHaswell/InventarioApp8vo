@@ -6,4 +6,10 @@
     <string name="main_error_permission_denied">No tienes permiso para acceder al inventario.</string>
     <string name="main_error_server">Error en el servidor.</string>
     <string name="main_error_remove">No tienes permisos para eliminar.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addProduct.hint.photoUrl">Url de foto</string>
+    <string name="addProduct.hint.name">Nombre</string>
+    <string name="addProduct.hint.cantidad">Cantidad</string>
 </resources>

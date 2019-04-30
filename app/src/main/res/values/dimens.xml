@@ -9,4 +9,7 @@
     <dimen name="item.product.height">128dp</dimen>
     <dimen name="common.item.cornerRadius">4dp</dimen>
     <dimen name="item.product.text.padding">4dp</dimen>
+    <dimen name="add.padding.main">16dp</dimen>
+    <dimen name="add.photo.size.width">96dp</dimen>
+    <dimen name="add.photo.size.height">80dp</dimen>
 </resources>
